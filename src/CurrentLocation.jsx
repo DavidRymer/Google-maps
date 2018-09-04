@@ -18,6 +18,7 @@ class CurrentLocation extends Component {
         console.log("CurrentLocation getDerivedStateFromProps");
         console.dir(props);
         console.dir(state);
+        return state;
 
 
     }
@@ -26,6 +27,7 @@ class CurrentLocation extends Component {
         console.log("CurrentLocation getSnapShotBeforeUpdate");
         console.dir(prevProps);
         console.dir(prevState);
+        return prevState;
     }
 
     shouldComponentUpdate(nextProps, nextState) {

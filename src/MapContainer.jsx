@@ -22,6 +22,7 @@ class MapContainer extends Component {
         console.log("MapContainer getDerivedStateFromProps");
         console.dir(props);
         console.dir(state);
+        return state;
 
 
     }
@@ -30,6 +31,7 @@ class MapContainer extends Component {
         console.log("MapContainer getSnapShotBeforeUpdate");
         console.dir(prevProps);
         console.dir(prevState);
+        return prevState;
     }
 
     shouldComponentUpdate(nextProps, nextState) {
